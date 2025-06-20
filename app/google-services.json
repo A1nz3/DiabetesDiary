@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "902658517385",
+    "project_id": "baza-do-apl",
+    "storage_bucket": "baza-do-apl.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:902658517385:android:e014596f57aa3ae6015958",
+        "android_client_info": {
+          "package_name": "com.example.diabetesdiary"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWIQpUbu5LD8VIJCWYZB6iyNuve_GjgMY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:902658517385:android:bb284c42969f5d57015958",
+        "android_client_info": {
+          "package_name": "com.mycompany.pazigbazatest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWIQpUbu5LD8VIJCWYZB6iyNuve_GjgMY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

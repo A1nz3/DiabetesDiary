@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#25BDD1AC"
+    android:orientation="vertical"
+    tools:context=".ChartActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#4CAF50"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Wykres poziomu cukru"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Wróć"
+            android:src="@android:drawable/ic_menu_revert"
+            android:tint="#FFFFFF" />
+    </LinearLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="match_parent"
+        android:layout_height="305dp"
+        android:layout_margin="16dp" />
+
+    <LinearLayout
+        android:id="@+id/inputSection"
+        android:layout_width="match_parent"
+        android:layout_height="446dp"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/levelInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Poziom cukru (mg/dL)"
+            android:inputType="numberDecimal" />
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="match_parent"
+            android:layout_height="348dp"
+            android:amPmBackgroundColor="#8B7CC781"
+            android:amPmTextColor="#4CAF50"
+            android:background="#25BDD1AC"
+            android:backgroundTint="#25BDD1AC"
+            android:foregroundTint="#4CAF50"
+            android:headerBackground="#4CAF50"
+            android:numbersBackgroundColor="#6D61A468"
+            android:numbersInnerTextColor="#4CAF50"
+            android:numbersSelectorColor="#4CAF50"
+            android:numbersTextColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#4CAF50"
+            android:text="Dodaj rekord" />
+    </LinearLayout>
+
+</LinearLayout>
